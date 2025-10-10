@@ -40,27 +40,27 @@ const Skills = () => {
   ];
 
   return (
-    <div className="dark-section py-20" id="skills">
-      <div className="content">
-        <div className="text-center mb-16 scroll-reveal">
-          <h2 className="text-4xl font-bold mb-4">
+    <div className="dark-section py-12 md:py-20" id="skills">
+      <div className="content px-4 md:px-0">
+        <div className="text-center mb-12 md:mb-16 scroll-reveal">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">
             My <span className="gradient-text">Skills</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
             Here are my technical skills with proficiency levels
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 scroll-reveal">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8 scroll-reveal">
           {skillCategories.map((category, index) => (
-            <div key={index} className="modern-card p-6 rounded-2xl">
-              <h3 className="text-xl font-semibold text-picto-primary mb-6">{category.title}</h3>
-              <div className="space-y-4">
+            <div key={index} className="modern-card p-4 md:p-6 rounded-2xl">
+              <h3 className="text-lg md:text-xl font-semibold text-picto-primary mb-4 md:mb-6">{category.title}</h3>
+              <div className="space-y-3 md:space-y-4">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex}>
                     <div className="flex justify-between mb-2">
-                      <span className="text-white font-medium">{skill.name}</span>
-                      <span className="text-picto-primary">{skill.level}%</span>
+                      <span className="text-white font-medium text-sm md:text-base">{skill.name}</span>
+                      <span className="text-picto-primary text-sm md:text-base">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-gray-700 rounded-full h-2">
                       <div 

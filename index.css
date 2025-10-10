@@ -38,7 +38,14 @@ body {
 }
 
 .content {
-  @apply max-xxl:w-full xxl:max-w-[1320px] xxl:mx-auto;
+  @apply max-xxl:w-full xxl:max-w-[1320px] xxl:mx-auto px-4 md:px-6 lg:px-8;
+}
+
+/* Mobile-first responsive padding */
+@media (max-width: 768px) {
+  .content {
+    @apply px-4;
+  }
 }
 
 .section-title {
@@ -127,6 +134,15 @@ body {
   border-right: 2px solid #6366f1;
   white-space: nowrap;
   animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+}
+
+/* Mobile typing animation adjustment */
+@media (max-width: 640px) {
+  .typing-animation {
+    white-space: normal;
+    border-right: none;
+    animation: none;
+  }
 }
 
 .dark-section {
@@ -296,6 +312,25 @@ body {
   left: 100%;
 }
 
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .modern-card {
+    backdrop-filter: blur(5px);
+  }
+  
+  .modern-card:hover::before {
+    display: none;
+  }
+  
+  .hover\:scale-105:hover {
+    transform: none;
+  }
+  
+  .glow {
+    box-shadow: none;
+  }
+}
+
 /* Animated border */
 @keyframes borderGlow {
   0%, 100% {
@@ -308,4 +343,20 @@ body {
 
 .animate-border {
   animation: borderGlow 2s ease-in-out infinite;
+}
+
+/* Mobile touch improvements */
+@media (max-width: 768px) {
+  .btn {
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+  
+  input, textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  .animate-border {
+    animation: none;
+  }
 }
