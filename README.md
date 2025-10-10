@@ -1,47 +1,41 @@
-# Picto - Personal Portfolio Free Template
+# 🌐 Rasi P - Portfolio Website  
 
-#### Preview
+Welcome to my personal portfolio website.  
+This site showcases my skills, projects, and interests in **Full-Stack Development, AI, and Cloud Technologies**.  
 
-- [Demo](https://themewagon.github.io/picto/)
+---
 
-#### Download
+## 🚀 Live Demo  
+🔗 [Portfolio Website](https://rasikkaa.github.io/)  
 
-- [Download from ThemeWagon](https://themewagon.com/themes/picto)
+---
 
-## Getting Started
+## 🛠️ Tech Stack  
+This project is built with:  
+- React + TypeScript  
+- Vite (fast build tool)  
+- Tailwind CSS for styling  
+- shadcn/ui for modern UI components  
 
-1. Clone Repository
+---
 
-```
-git clone https://github.com/themewagon/picto.git
-```
+## 📂 Project Setup  
 
-2. Install Dependencies
+### Prerequisites  
+- Install [Node.js](https://nodejs.org/) & npm  
+- Install [Git](https://git-scm.com/) on your machine  
 
-```
-npm i
-```
-
-3. Run the development server:
+### Run Locally  
 
 ```bash
+# Step 1: Clone the repository
+git clone https://github.com/Rasikkaa/portfolio.git
+
+# Step 2: Navigate to the project folder
+cd portfolio
+
+# Step 3: Install dependencies
+npm install
+
+# Step 4: Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-## Author
-
-```
-Developed by ThemeWagon and development team.
-```
-
-## License
-
-- Design and Code is Copyright &copy; <a href="http://themewagon.com/" target="_blank">ThemeWagon</a>
-- Licensed cover under [MIT]
-- Developed by <a href="http://themewagon.com/" target="_blank">ThemeWagon</a>
